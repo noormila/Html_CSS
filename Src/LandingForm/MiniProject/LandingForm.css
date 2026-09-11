@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: black;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background:
+    linear-gradient(to bottom, rgba(255, 64, 50, 0.8), rgba(71, 17, 116, 0.9)),
+    url("../Images/background.jpg") no-repeat center/cover;
+  background-size: cover;
+}
+
+.header img {
+  width: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header-right {
+  display: flex;
+  gap: 25px;
+}
+
+.header-right a {
+  color: white;
+}
+
+/* added to test */
+.header-right :hover {
+  color: purple;
+  border-bottom: 1px solid rgb(237, 203, 237);
+}
+
+.main-content {
+  display: flex;
+  max-width: 1100px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+.main-content form {
+  flex: 1;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(255, 255, 255, 0.2);
+  color: white;
+  outline: 0;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: rgb(202, 6, 49);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.text-container h1 {
+  line-height: 1.2;
+  margin: 50px 0px 20px;
+  font-size: 50px;
+}
+
+.text-container p {
+  margin: 25px 0 20px;
+  font-size: 18px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  
+  .header, .header .header-right{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .main-content{
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: stretch;
+    margin:  auto;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+ 
+  .text-container h1{
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+}
+

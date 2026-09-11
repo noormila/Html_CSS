@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d9e2e8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 200px auto;
+    margin-left: 20px;
+}
+
+.card {
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card h2, p, a {
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+
+.card a:hover{
+    opacity: 0.8;
+}
+
+.card-sporty .card-casual .card-formal p {
+    font-size: 18px;
+}
+
+.card-sporty h2 {
+    color: crimson;
+}
+.card-casual h2 {
+    color: blue;
+}
+.card-formal h2 {
+    color: maroon;
+}
+
+
+.card-sporty a{
+    background-color: crimson;
+}
+.card-casual a{
+    background-color:  blue;
+}
+.card-formal a{
+    background-color: maroon;
+}
+
+.card-sporty{
+  background: #fff url('./images/sporty.png') no-repeat center right / 200px;
+}
+.card-casual{
+  background: #fff url('./images/casual.png') no-repeat center right / 200px;
+}
+.card-formal{
+  background: #fff url('./images/formal.png') no-repeat center right / 200px;
+}
